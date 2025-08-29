@@ -24,7 +24,7 @@ print(np.max(x_train_noised), np.min(x_test_noised))    # 1.0 0.0
 #2. 모델
 input_img = Input(shape=(28*28,))
 ##### 인코더 #####
-x = Conv3D(64, (2,2), padding='same')(input_img)
+x = Conv3D(64, kernel_size=(2,2), padding='same')(input_img)
 x = MaxPooling2D()(x)
 x = Conv3D(32, (2,2), padding='same')(x)
 x = MaxPooling2D()(x)
