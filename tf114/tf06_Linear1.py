@@ -29,4 +29,4 @@ for step in range(epochs) :
     if step%100 ==0 :
         print(step+1, sess.run(loss), sess.run(w), sess.run(b), sess.run(hypothesis))
 
-
+sess.close()
